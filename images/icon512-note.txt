@@ -1,0 +1,1 @@
+The repository icon is being replaced with a 512x512 PNG to match the known-good Dalamud plugin layout.
