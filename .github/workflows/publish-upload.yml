@@ -97,9 +97,15 @@ jobs:
           TAG="${{ steps.pkg.outputs.tag }}"
           ZIP="${{ steps.pkg.outputs.zip }}"
           VERSION="${{ steps.pkg.outputs.version }}"
+          NOTES_FILE="release-notes/${VERSION}.md"
+          if [ -f "$NOTES_FILE" ]; then
+            NOTES_ARGS=(--notes-file "$NOTES_FILE")
+          else
+            NOTES_ARGS=(--notes "更新版")
+          fi
           if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             gh release upload "$TAG" "$ZIP" --clobber --repo "$GITHUB_REPOSITORY"
-            gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" --title "Dalamud Quick Launcher v${VERSION}" --notes "初回公開版"
+            gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" --title "Dalamud Quick Launcher v${VERSION}" "${NOTES_ARGS[@]}"
           else
-            gh release create "$TAG" "$ZIP" --repo "$GITHUB_REPOSITORY" --title "Dalamud Quick Launcher v${VERSION}" --notes "初回公開版"
+            gh release create "$TAG" "$ZIP" --repo "$GITHUB_REPOSITORY" --title "Dalamud Quick Launcher v${VERSION}" "${NOTES_ARGS[@]}"
           fi
