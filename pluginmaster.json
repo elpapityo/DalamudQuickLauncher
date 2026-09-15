@@ -5,7 +5,7 @@
     "Punchline": "よく使うDalamudプラグインとコマンドを1クリックで呼び出します。",
     "Description": "インストール済みプラグインから表示対象を選び、折りたたみ式ランチャーから画面や設定を開きます。任意コマンド、ランチャーセット、FF14ゲームアイコン／PNGアイコンの割り当てにも対応します。",
     "InternalName": "DalamudQuickLauncher",
-    "AssemblyVersion": "0.1.0.0",
+    "AssemblyVersion": "0.2.0.0",
     "RepoUrl": "https://github.com/elpapityo/DalamudQuickLauncher",
     "ApplicableVersion": "any",
     "Tags": [
@@ -14,11 +14,11 @@
     ],
     "DalamudApiLevel": 15,
     "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/elpapityo/DalamudQuickLauncher/main/images/icon.png?v=0.1.0-iconfix2",
+    "IconUrl": "https://raw.githubusercontent.com/elpapityo/DalamudQuickLauncher/main/images/icon.png?v=0.2.0",
     "ImageUrls": [],
-    "DownloadLinkInstall": "https://github.com/elpapityo/DalamudQuickLauncher/releases/download/V0.1.0/DalamudQuickLauncher_v0.1.0.zip",
-    "DownloadLinkUpdate": "https://github.com/elpapityo/DalamudQuickLauncher/releases/download/V0.1.0/DalamudQuickLauncher_v0.1.0.zip",
-    "DownloadLinkTesting": "https://github.com/elpapityo/DalamudQuickLauncher/releases/download/V0.1.0/DalamudQuickLauncher_v0.1.0.zip",
+    "DownloadLinkInstall": "https://github.com/elpapityo/DalamudQuickLauncher/releases/download/V0.2.0/DalamudQuickLauncher_v0.2.0.zip",
+    "DownloadLinkUpdate": "https://github.com/elpapityo/DalamudQuickLauncher/releases/download/V0.2.0/DalamudQuickLauncher_v0.2.0.zip",
+    "DownloadLinkTesting": "https://github.com/elpapityo/DalamudQuickLauncher/releases/download/V0.2.0/DalamudQuickLauncher_v0.2.0.zip",
     "IsHide": false,
     "IsTestingExclusive": false
   }
